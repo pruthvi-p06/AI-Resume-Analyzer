@@ -1,0 +1,16 @@
+Test,Input / condition,Expected result
+T1,PDF resume with selectable text,Text extracted
+T2,DOCX resume,Text extracted
+T3,Resume contains Python and SQL,Skills detected
+T4,Resume has no skill terms,"Empty/low skill list, no crash"
+T5,Resume with Data Analyst skills,Data Analyst ranks reasonably
+T6,Resume with NLP and transformers,NLP Engineer ranks reasonably
+T7,Resume with OpenCV and YOLO,Computer Vision role ranks reasonably
+T8,Upload unsupported .txt,Uploader blocks file
+T9,Empty extracted PDF,Helpful warning
+T10,Check target role,Missing skills displayed
+T11,Role ranking,Top 3 shown
+T12,Download report,TXT download works
+T13,Resume contains C++ / .NET,Important symbols not removed in parser
+T14,Resume with only education,App does not crash
+T15,Check sensitive attributes,No protected attributes used in score
